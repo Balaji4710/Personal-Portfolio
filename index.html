@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balaji S | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: linear-gradient(-45deg, #020617, #0f172a, #1e1b4b, #1e3a8a);
+            background-size: 400% 400%;
+            animation: gradientBG 12s ease infinite;
+            color: white;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: 0;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            transition: 0.4s;
+        }
+
+        .glass:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #60a5fa, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .nav-blur {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(15px);
+        }
+
+        .skill-pill {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .skill-pill:hover {
+            background: #2563eb;
+            transform: scale(1.05);
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 60px;
+        }
+
+        .project-card {
+            min-height: 320px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <nav class="sticky top-0 z-50 nav-blur border-b border-white/10">
+
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-extrabold">
+                BALAJI<span class="text-blue-500">.S</span>
+            </h1>
+            <div class="hidden md:flex gap-8 text-sm font-semibold text-slate-300">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#skills" class="hover:text-white transition">Skills</a>
+                <a href="#projects" class="hover:text-white transition">Projects</a>
+                <a href="#experience" class="hover:text-white transition">Experience</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
+
+            </div>
+        </div>
+    </nav>
+    <section class="max-w-6xl mx-auto px-6 py-36 text-center reveal">
+    <div
+            class="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/20 text-blue-400 px-4 py-2 rounded-full text-sm font-bold mb-8">
+            <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+            MULESOFT & AI SPECIALIST
+        </div>
+        <h1 class="text-5xl md:text-7xl font-black leading-tight mb-8">
+
+            Hi, I'm
+            <span class="gradient-text">Balaji</span>
+
+        </h1>
+        <h2 class="text-2xl md:text-4xl font-bold text-slate-300 mb-10">
+
+            <span id="typing"></span>
+
+        </h2>
+        <p class="text-slate-400 text-lg md:text-xl leading-relaxed mb-14 max-w-3xl mx-auto">
+
+            MuleSoft Developer and AI enthusiast focused on API-led integrations,
+            intelligent automation, scalable backend systems, cloud technologies,
+            and AI-powered workflows.
+
+        </p>
+        <div class="flex flex-wrap justify-center gap-5">
+            <a href="mailto:balajisrinivasan635@gmail.com"
+                class="bg-blue-600 hover:bg-blue-500 px-8 py-4 rounded-2xl font-bold transition duration-300">
+
+                Hire Me
+
+            </a>
+            <a href="https://github.com/Balaji4710"
+                target="_blank"
+                class="glass px-8 py-4 rounded-2xl font-bold">
+
+                GitHub
+
+            </a>
+        </div>
+    </section>
+    <section id="about" class="max-w-6xl mx-auto px-6 py-24 reveal">
+
+        <h2 class="section-title">
+            About Me
+        </h2>
+        <div class="glass rounded-3xl p-10">
+            <p class="text-slate-400 leading-loose text-lg">
+
+                I am a passionate MuleSoft Developer and AI enthusiast with experience
+                in building scalable API-led integrations, cloud workflows, and AI-based
+                applications. I specialize in Salesforce integrations, DataWeave transformations,
+                REST APIs, and modern backend development.
+                <br><br>
+                I enjoy solving real-world business problems using automation,
+                cloud computing, and intelligent systems.
+            </p>
+        </div>
+    </section>
+    <section id="skills" class="max-w-6xl mx-auto px-6 py-24 reveal">
+
+        <h2 class="section-title">
+            Skills
+        </h2>
+
+        <div class="flex flex-wrap gap-5">
+
+            <div class="skill-pill">Python</div>
+            <div class="skill-pill">MuleSoft</div>
+            <div class="skill-pill">Salesforce</div>
+            <div class="skill-pill">OpenAI</div>
+            <div class="skill-pill">LangChain</div>
+            <div class="skill-pill">SQL</div>
+            <div class="skill-pill">REST APIs</div>
+            <div class="skill-pill">TensorFlow</div>
+            <div class="skill-pill">PyTorch</div>
+            <div class="skill-pill">CloudHub</div>
+            <div class="skill-pill">GitHub</div>
+            <div class="skill-pill">HTML</div>
+            <div class="skill-pill">CSS</div>
+            <div class="skill-pill">RAML</div>
+            <div class="skill-pill">DataWeave 2.0</div>
+            <div class="skill-pill">Snowflake</div>
+            <div class="skill-pill">Java</div>
+            <div class="skill-pill">Postman</div>
+
+        </div>
+
+    </section>
+
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-24 reveal">
+
+        <h2 class="section-title">
+            Projects
+        </h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+
+            <div class="glass p-10 rounded-3xl project-card">
+
+                <div class="text-blue-400 text-sm font-bold uppercase tracking-widest mb-4">
+
+                    AI / Deep Learning
+
+                </div>
+
+                <h3 class="text-3xl font-bold mb-5">
+
+                    Pneumonia Detection AI
+
+                </h3>
+
+                <p class="text-slate-400 leading-relaxed mb-8">
+
+                    Developed an AI-powered medical imaging system using PyTorch
+                    to classify chest X-ray images into pneumonia and normal categories
+                    using deep learning techniques.
+
+                </p>
+
+                <a href="https://github.com/Balaji4710/Pneumonia-Detection"
+                    target="_blank"
+                    class="text-blue-400 font-bold hover:text-white transition">
+
+                    View Project 
+
+                </a>
+
+            </div>
+
+
+            <div class="glass p-10 rounded-3xl project-card">
+
+                <div class="text-purple-400 text-sm font-bold uppercase tracking-widest mb-4">
+
+                    NLP / Machine Learning
+
+                </div>
+
+                <h3 class="text-3xl font-bold mb-5">
+
+                    Sentiment Analysis System
+
+                </h3>
+
+                <p class="text-slate-400 leading-relaxed mb-8">
+
+                    Built an NLP pipeline using TF-IDF vectorization and machine learning
+                    algorithms to classify movie reviews as positive or negative.
+
+                </p>
+
+                <a href="https://github.com/Balaji4710/sentiment-analysis"
+                    target="_blank"
+                    class="text-purple-400 font-bold hover:text-white transition">
+
+                    View Project 
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="experience" class="max-w-6xl mx-auto px-6 py-24 reveal">
+
+        <h2 class="section-title">
+            Experience
+        </h2>
+
+        <div class="glass rounded-3xl p-10">
+
+            <h3 class="text-3xl font-bold mb-2">
+
+                MuleSoft Developer Intern
+
+            </h3>
+
+            <p class="text-blue-400 font-semibold mb-8">
+
+                Mulecraft | May 2025 – Dec 2025
+
+            </p>
+
+            <div class="space-y-5 text-slate-400">
+
+                <p>✔ Built scalable API-led integrations using MuleSoft.</p>
+
+                <p>✔ Developed DataWeave 2.0 transformations.</p>
+
+                <p>✔ Integrated Salesforce and external systems.</p>
+
+                <p>✔ Implemented MUnit testing and exception handling.</p>
+
+                <p>✔ Worked with CloudHub deployments and API Manager.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 py-24 reveal">
+        <h2 class="section-title">
+            Certifications
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-4">
+                    Mulesoft Certification By Mulecraft
+
+                </h3>
+                <p class="text-slate-400">
+                    API-led connectivity, integration architecture,
+                    DataWeave transformations, and CloudHub deployment.
+                </p>
+            </div>
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-4">
+
+                    Java Essentials Certification By LinkedIn Learning
+
+                </h3>
+                <p class="text-slate-400">
+
+                    Core Java concepts, OOP principles, and Java programming
+                    fundamentals.
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <section id="contact" class="max-w-6xl mx-auto px-6 py-24 reveal">
+        <div class="glass rounded-3xl p-10">
+            <h2 class="section-title">
+                Contact Me
+            </h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div>
+                    <p class="text-slate-400 text-lg leading-loose mb-10">
+
+                        Feel free to contact me for internships,
+                        freelance work, AI projects, and collaborations.
+
+                    </p>
+                    <div class="space-y-6 text-lg">
+                        <p>
+                            <i class="fa-solid fa-envelope text-blue-400 mr-4"></i>
+                            balajisrinivasan635@gmail.com
+                        </p>
+
+                        <p>
+                            <i class="fa-solid fa-phone text-blue-400 mr-4"></i>
+                            6369506802
+                        </p>
+
+                        <p>
+                            <i class="fa-brands fa-github text-blue-400 mr-4"></i>
+                            github.com/Balaji4710
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <form class="space-y-5">
+
+                    <input type="text"
+                        placeholder="Your Name"
+                        class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 outline-none">
+
+                    <input type="email"
+                        placeholder="Your Email"
+                        class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 outline-none">
+
+                    <textarea rows="5"
+                        placeholder="Your Message"
+                        class="w-full bg-white/5 border border-white/10 rounded-xl px-5 py-4 outline-none"></textarea>
+
+                    <button
+                        class="bg-blue-600 hover:bg-blue-500 px-8 py-4 rounded-xl font-bold transition">
+
+                        Send Message
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+    <footer class="border-t border-white/10 py-10 text-center">
+
+        <div class="flex justify-center gap-8 text-2xl mb-6">
+
+            <a href="https://github.com/Balaji4710" target="_blank">
+                <i class="fa-brands fa-github hover:text-blue-400 transition"></i>
+            </a>
+
+            <a href="https://linkedin.com" target="_blank">
+                <i class="fa-brands fa-linkedin hover:text-blue-400 transition"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-instagram hover:text-blue-400 transition"></i>
+            </a>
+
+        </div>
+
+        <p class="text-slate-500">
+
+            © 2026 Balaji S • Built with HTML + Tailwind CSS
+        </p>
+    </footer>
+    <script>
+        new Typed('#typing', {
+            strings: [
+                'MuleSoft Developer',
+                'AI Engineer',
+                'Python Developer'
+            ],
+            typeSpeed: 60,
+            backSpeed: 40,
+            loop: true
+        });
+
+    </script>
+<script>
+
+        ScrollReveal().reveal('.reveal', {
+            delay: 200,
+            distance: '60px',
+            origin: 'bottom',
+            duration: 1200
+        });
+    </script>
+    <script>
+        tsParticles.load("particles-js", {
+            particles: {
+                number: {
+                    value: 50
+                },
+                color: {
+                    value: "#ffffff"
+                },
+                opacity: {
+                    value: 0.2
+                },
+                size: {
+                    value: 2
+                },
+                move: {
+                    enable: true,
+                    speed: 1
+                },
+                links: {
+                    enable: true,
+                    distance: 150,
+                    opacity: 0.1
+                }
+            }
+        });
+
+    </script>
+</body>
+
+</html>
